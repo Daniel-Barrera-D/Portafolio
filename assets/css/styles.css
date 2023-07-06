@@ -1,0 +1,768 @@
+html {
+    font-family: 'Open Sans';
+}
+
+body {
+    margin: 0;
+}
+
+/* Estilos Cabecera */
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    background-color: #EDEDED;
+}
+
+.cabecera__info {
+    display: flex;
+    align-items: center;
+}
+
+.cabecera__nombre {
+    font-size: 1rem;
+    color: #464646;
+    font-weight: bold;
+    padding-left: .3rem;
+}
+
+.cabecera__imagen {
+    width: 20px;
+}
+
+.menu__lista {
+    display: flex;
+}
+
+.menu__link {
+    padding-left: 1.5rem;
+    text-decoration: none;
+    color: #464646;
+}
+
+.menu__link--email {
+    font-weight: bold;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+/* Estilos sección resumen general */
+
+.resumen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    background-color: #EDEDED;
+}
+
+.resumen__nombre {
+    color: #464646;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.resumen__descripcion {
+    color: #464646;
+    font-size: 1.4rem;
+}
+
+.resumen__imagen {
+    width: 260px;
+    padding: 2rem 0 1.5rem 1.5rem;
+}
+
+.resumen__lista {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.resumen__item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.resumen__link {
+    /* padding-left: 1.5rem; */
+    text-decoration: none;
+    color: #464646;
+}
+
+.resumen__flecha {
+    padding-right: 1.5rem;
+}
+
+.resumen__link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo sección sobre mi */
+
+.sobre {
+    background-color: #EAF2FD;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.sobre__contenido {
+    padding: 2.5rem 15rem 5rem 0;
+}
+
+.sobre__titulo {
+    margin: 0;
+    color: #464646;
+    font-weight: bold;
+}
+
+.sobre__descripcion {
+    margin: 0;
+    color: #464646;
+    padding-top: 1rem;
+}
+
+/* Estilos Skills & Hobbies */
+
+.seccion-skills {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EDEDED;
+    padding-top: 1.5rem;
+    /* justify-content: space-evenly; */
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.skills__titulo {
+    margin: 0;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: #EDEDED;
+    color: #464646;
+    font-weight: bold;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    background-color: #FFFFFF;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.skill-logo {
+    padding-left: .5rem;
+}
+
+.skill__titulo {
+    margin: 0;
+    padding: .5rem 0 .5rem .5rem;
+    font-size: 1rem;
+    color: #464646;
+}
+
+.hobbies__titulo {
+    margin: 0;
+    padding-top: 3.75rem;
+    text-align: center;
+    background-color: #EDEDED;
+    color: #464646;
+    font-weight: bold;
+}
+
+.seccion-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EDEDED;
+    padding-top: 1.5rem;
+    /* justify-content: space-evenly; */
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.hobbie {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    background-color: #FFFFFF;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.hobbie-logo {
+    padding-left: .5rem;
+}
+
+.hobbie__titulo {
+    margin: 0;
+    padding: .5rem 0 .5rem .5rem;
+    font-size: 1rem;
+    color: #464646;
+}
+
+/* Estilos sección formaciones */
+
+.formaciones__titulo {
+    margin: 0;
+    background-color: #EAF2FD;
+    padding-top: 3.75rem;
+    text-align: center;
+    color: #464646;
+    font-weight: 700;
+}
+
+.formaciones {
+    display: flex;
+    background-color: #EAF2FD;
+    /* justify-content: space-around; */
+    padding: 4rem 7rem 8rem 7rem;
+    flex-wrap: wrap;
+}
+
+.formacion {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    align-items: center;
+    width: 18rem;
+    height: 17.875rem;
+    margin-right: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.formacion__titulo {
+    margin: 0;
+    width: 100%;
+    background-color: #EAF2FD;
+    font-size: 1.3rem;
+}
+
+.formacion__periodo {
+    margin: 0;
+    width: 100%;
+    background-color: #EAF2FD;
+    font-size: .8rem;
+    
+}
+
+.formacion__imagen {
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+    width: 150px;
+}
+
+/* Estilos experiencia profesional */
+
+.experiencias__titulo {
+    margin: 0;
+    padding-bottom: 1.5rem;
+    background-color: #EDEDED;
+    padding-top: 3.75rem;
+    text-align: center;
+    color: #464646;
+    font-weight: 700;
+}
+
+.seccion-experiencias {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    background-color: #EDEDED;
+}
+
+.experiencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.experiencia__titulo {
+    margin: 0;
+    color: #464646;
+}
+
+.seccion__experiencia {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 22.75rem;
+}
+
+.experiencia__descripcion {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #464646;
+}
+
+.experiencia__repositorio {
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    border-radius: 9px;
+    transition: 0.2s all ease-out;
+}
+
+.experiencia__demo {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    border: 1px solid #2A7AE4;
+    border-radius: 9px;
+    transition: 0.2s all ease-out;
+}
+
+.experiencia__repositorio:hover {
+    background-color: #2C5C9B;
+    color: #FFFFFF;
+    border: 1px solid #2C5C9B;
+}
+
+.experiencia__demo:hover {
+    background-color: #2C5C9B;
+    color: #FFFFFF;
+    border: 1px solid #2C5C9B;
+}
+
+/* Estilos sección contacto */
+
+.contacto {
+    display: flex;
+    padding: 6rem 7rem 4rem 7rem;
+    background: #EAF2FD;
+    justify-content: center;
+}
+
+.formulario__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.formulario__titulo {
+    margin: 0;
+}
+
+.formulario__descripcion {
+    margin: 0;
+}
+
+.formulario__input {
+    font-family: 'Open Sans';
+    height: 3.125rem;
+    padding-left: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+    border-radius: 3px;
+    transition: 0.2s all ease-out;
+}
+
+.formulario__textarea {
+    font-family: 'Open Sans';
+    resize: none;
+    border: none;
+    padding: 0.8rem 0 0 0.5rem;
+    border-bottom: 2px solid #C8C8C8;
+    border-radius: 3px;
+    transition: 0.2s all ease-out;
+}
+
+.formulario__boton {
+    max-width: 9rem;
+    padding: 0.5rem;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    border: 1px solid #2A7AE4;
+    border-radius: 9px;
+    transition: 0.2s all ease-out;
+}
+
+.formulario__input:focus {
+    outline: none;
+    border-bottom: 2px solid #2A7AE4;
+    border-radius: 3px;
+}
+
+.formulario__textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #2A7AE4;
+    border-radius: 3px;
+}
+
+.formulario__boton:hover {
+    background-color: #2C5C9B;
+    color: #FFFFFF;
+    border: 1px solid #2C5C9B;
+    cursor: pointer;
+}
+
+.formulario__input::placeholder {
+    font-family: 'Open Sans';
+    color: #A2A2A2;
+    padding: 0.5rem 0 0 0.1rem;
+}
+
+.formulario__textarea::placeholder {
+    font-family: 'Open Sans';
+    color: #A2A2A2;
+}
+
+/* Estilos footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    align-items: center;
+}
+
+.footer__titulo {
+    margin: 0;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    color: #464646;
+    font-weight: 400;
+}
+
+.footer__anio {
+    margin: 0;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #464646;
+    font-weight: 400;
+}
+
+/* Responsive para tablets */
+
+@media(max-width: 768px) {
+    
+    .cabecera {
+        padding: 0 2.5rem 0 2.5rem;
+    }
+    .menu__link {
+        display: none;
+    }
+
+    .menu__link--email {
+        display: block;
+    }
+
+    .resumen {
+        padding: 0 2.5rem 0 2.5rem;
+    }
+
+    .resumen__nombre {
+        font-size: 1rem;
+    }
+
+    .resumen__descripcion {
+        font-size: 0.9rem;
+    }
+
+    .resumen__imagen {
+        width: 160px;
+    }
+
+    .resumen__link {
+        font-size: 0.9rem;
+    }
+
+    .sobre {
+        padding: 0 2.5rem 0 2.5rem;
+    }
+
+    .sobre__contenido {
+        width: 100%;
+        padding: 2.5rem 0rem 5rem 0;
+    }
+
+    .sobre__descripcion {
+        width: 100%;
+    }
+
+    .seccion-skills {
+        padding: 1.5rem 2.5rem 0 2.5rem;
+    }
+
+    .skill {
+        width: 13.3rem;
+        height: 7.375rem;
+        margin-right: 1rem;
+    }
+
+    .seccion-hobbies {
+        padding: 1.5rem 2.5rem 0 2.5rem;
+    }
+
+    .hobbie {
+        width: 13.3rem;
+        height: 7.375rem;
+        margin-right: 1rem;
+    }
+
+    .formaciones {
+        padding: 1.5rem 2.5rem 0 2.5rem;
+        height: 12rem;
+    }
+
+    .formacion {
+        width: 13.3rem;
+        height: 7.375rem;
+        margin-right: 1rem;
+    }
+
+    .formacion__imagen {
+        padding: 2rem 0 2rem 0;
+        width: 50px;
+    }
+
+    .formacion__titulo {
+        font-size: 1rem;
+    }
+
+    .formacion__periodo {
+        font-size: 0.7rem;
+    }
+
+    .experiencias__titulo {
+        padding-top: 2rem;
+    }
+
+    .seccion-experiencias {
+        padding: 0.3rem 2.5rem 0 2.5rem;
+    }
+
+    .experiencia {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experiencia__imagen {
+        width: 670px;
+    }
+
+    .experiencia__titulo {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .experiencia__descripcion {
+        font-size: 0.8rem;
+    }
+
+    .seccion__experiencia-mover {
+        position: relative;
+        top: 355px;
+    }
+
+    .experiencia__imagen-mover {
+        position: relative;
+        top: -90px;
+    }
+
+    .contacto {
+        justify-content: left;
+        padding: 0.3rem 2.5rem 0 2.5rem;
+    }
+
+    .contacto__imagen {
+        display: none;
+    }
+
+    .formulario__titulo {
+        font-size: 1.3rem;
+        padding-top: 0.5rem;
+    }
+
+    .formulario__descripcion {
+        font-size: 0.9rem;
+        padding-bottom: 1rem;
+    }
+
+    .formulario__contacto {
+        padding: 0;
+        width: 100%;
+    }
+
+    .formulario__input {
+        margin-bottom: 1.5rem;
+    }
+
+    .formulario__textarea {
+        margin-bottom: 1.5rem;
+    }
+
+    .formulario__boton {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Responsive para moviles */
+
+@media(max-width: 430px) {
+    .cabecera {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .cabecera__nombre {
+        font-size: 0.7rem;
+    }
+
+    .menu__lista {
+        padding: 0;
+    }
+
+    .menu__link--email {
+        padding: 0;
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+
+    .resumen {
+        flex-direction: column;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .resumen__general {
+        position: relative;
+        top: 105px;
+    }
+
+    .resumen__imagen {
+        padding: 0 1rem 0 1rem;
+        position: relative;
+        width: 98px;
+        top: -180px;
+        left: -150px;
+    }
+
+    .resumen__lista {
+        justify-content: space-between;
+    }
+
+    .resumen__link {
+        font-weight: bold;
+    }
+
+    .resumen__flecha {
+        padding: 0;
+    }
+
+    .sobre {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .sobre__contenido {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .skills__titulo {
+        padding-bottom: 1rem;
+    }
+
+    .seccion-skills {
+        padding: 0 1rem 0 1rem;
+        justify-content: space-between;
+    }
+
+    .skill {
+        width: 190px;
+        height: 118px;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .hobbies__titulo {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .seccion-hobbies {
+        padding: 0 1rem 0 1rem;
+        justify-content: space-between;
+    }
+
+    .hobbie {
+        width: 190px;
+        height: 118px;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .formaciones__titulo {
+        padding-top: 2rem;
+    }
+
+    .formaciones {
+        height: 100%;
+        padding: 1.5rem 1rem 0 1rem;
+        justify-content: center;
+    }
+
+    .formacion {
+        height: 100%;
+    }
+
+    .formacion__periodo {
+        font-weight: 400;
+    }
+
+    .seccion-experiencias {
+        padding: 0.3rem 1rem 0 1rem
+    }
+
+    .experiencia {
+        align-items: center;
+    }
+
+    .experiencia__imagen {
+        width: 296px;
+    }
+
+    .experiencia__titulo {
+        padding-top: 1rem;
+    }
+
+    .seccion__experiencia-mover {
+        top: 160px;
+    }
+
+    .footer {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .footer__titulo {
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+    }
+
+    .footer__anio {
+        font-size: 0.8rem;
+        padding-bottom: 0.5rem;
+    }
+}
